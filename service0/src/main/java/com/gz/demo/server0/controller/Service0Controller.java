@@ -12,10 +12,10 @@ import java.util.Date;
 @RestController
 public class Service0Controller {
 
-    FastDateFormat format = FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss.sss");
+//    FastDateFormat format = FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss.sss");
 
-    @GetMapping("test")
+    @GetMapping("/test")
     String test () {
-        return format.format(new Date());
+        return "data";//FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss.sss").format(new Date());
     }
 }
